@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/api/tasks 
+###
+GET http://localhost:3000/api/tasks?size=10&page=0&title=true
+###
+
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "tarea",
+    "description": "sin true",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/61c4bebb4c17bb553fb1b706
+
+###
+DELETE http://localhost:3000/api/tasks/61c4a5aa5e02ba6140ea77fc 
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/61c4b1fa8b2b1304928ec28b
+Content-Type: application/json
+
+{
+    "title": "probando update"
+}
